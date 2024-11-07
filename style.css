@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Mengatur box-sizing agar padding tidak menambah ukuran elemen */
+}
+
+body {
+    font-family: Arial, sans-serif; /* Font standar untuk teks */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Membuat konten vertikal di tengah layar */
+    background-color: #f0f0f0; /* Warna latar belakang */
+}
+
+.container {
+    background-color: #fff; /* Warna latar kontainer */
+    padding: 20px; /* Padding di dalam kontainer */
+    border-radius: 8px; /* Membuat sudut kontainer membulat */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Efek bayangan pada kontainer */
+    width: 300px; /* Lebar kontainer */
+    text-align: center; /* Teks dalam kontainer rata tengah */
+}
+
+h1 {
+    margin-bottom: 20px; /* Jarak bawah untuk judul */
+    font-size: 24px; /* Ukuran font untuk judul */
+    color: #333; /* Warna teks judul */
+}
+
+label {
+    font-weight: bold; /* Tebal untuk label */
+    margin-top: 10px;
+    display: block; /* Membuat label tampil di baris baru */
+    color: #555; /* Warna teks label */
+}
+
+input[type="number"] {
+    width: 100%; /* Lebar penuh untuk input */
+    padding: 10px; /* Padding di dalam input */
+    margin: 5px 0; /* Margin atas dan bawah input */
+    border: 1px solid #ccc; /* Border input */
+    border-radius: 5px; /* Membulatkan sudut input */
+}
+
+button {
+    background-color: #007bff; /* Warna latar belakang tombol */
+    color: #fff; /* Warna teks tombol */
+    padding: 10px; /* Padding dalam tombol */
+    border: none; /* Tanpa border */
+    border-radius: 5px; /* Membulatkan sudut tombol */
+    cursor: pointer; /* Cursor berubah saat hover */
+    width: 100%; /* Lebar penuh */
+    font-weight: bold; /* Font tebal */
+}
+
+button:hover {
+    background-color: #0056b3; /* Warna tombol saat di-hover */
+}
+
+#result {
+    margin-top: 20px; /* Jarak atas untuk hasil */
+    font-size: 18px; /* Ukuran font hasil */
+}
+
+.success {
+    color: green; /* Warna teks untuk status lulus */
+}
+
+.fail {
+    color: red; /* Warna teks untuk status gagal */
+}

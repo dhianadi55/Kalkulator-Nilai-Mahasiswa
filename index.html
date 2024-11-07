@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Nilai Mahasiswa</title>
+    <link rel="stylesheet" href="style.css"> <!-- Menghubungkan ke file CSS eksternal untuk styling -->
+</head>
+<body>
+    <div class="container"> <!-- Kontainer utama untuk tampilan aplikasi -->
+        <h1>Kalkulator Nilai Mahasiswa</h1> <!-- Judul aplikasi -->
+        
+        <!-- Formulir input nilai -->
+        <form id="gradeForm">
+            <label for="tugas">Nilai Tugas (30%)</label> <!-- Label untuk input nilai tugas -->
+            <input type="number" id="tugas" placeholder="0-100" required> <!-- Input untuk nilai tugas, antara 0-100 -->
+
+            <label for="uts">Nilai UTS (30%)</label> <!-- Label untuk input nilai UTS -->
+            <input type="number" id="uts" placeholder="0-100" required> <!-- Input untuk nilai UTS, antara 0-100 -->
+
+            <label for="uas">Nilai UAS (40%)</label> <!-- Label untuk input nilai UAS -->
+            <input type="number" id="uas" placeholder="0-100" required> <!-- Input untuk nilai UAS, antara 0-100 -->
+
+            <!-- Tombol untuk menghitung nilai, memanggil fungsi JavaScript saat diklik -->
+            <button type="button" onclick="calculateGrade()">Hitung Nilai</button>
+        </form>
+
+        <!-- Div untuk menampilkan hasil perhitungan -->
+        <div id="result"></div>
+    </div>
+
+    <!-- Menyisipkan file JavaScript eksternal untuk logika aplikasi -->
+    <script src="script.js"></script>
+</body>
+</html>
